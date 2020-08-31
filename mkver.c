@@ -63,9 +63,8 @@ void load(char *filename, struct semver *v) {
 		v->build = tag_value(BUILD, buffer);
 		fclose(f);
 	}
-	else {
+	else
 		v->major = v->minor = v->patch = v->build = 0;
-	}
 }
 
 int main(int argc, char **argv) {
