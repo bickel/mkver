@@ -64,10 +64,7 @@ void load(char *filename, struct semver *v) {
 		fclose(f);
 	}
 	else {
-		v->major = 0;
-		v->minor = 0;
-		v->patch = 0;
-		v->build = 0;
+		v->major = v->minor = v->patch = v->build = 0;
 	}
 }
 
