@@ -47,7 +47,7 @@ void save(char *filename, struct semver *v) {
 	fprintf(f, "#define %s %d\n", PATCH, v->patch);
 	fprintf(f, "#define %s %d\n", BUILD, v->build);
 	fprintf(f, "#define __VERSION__ \"%d.%d.%d.%d\"\n", v->major, v->minor, v->patch, v->build);
-	fprintf(f, "#endif\n", f);
+	fprintf(f, "#endif\n");
 	fclose(f);
 }
 
